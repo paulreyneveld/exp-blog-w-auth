@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  h2 Create Post
+
+  form(method='POST' action='/new') 
+    label(for="content") Content: 
+    textarea(name="content", cols="30", rows="10")
+    label(for="author") Author: 
+    input(type="text", name="author")
+    button(type="submit") Submit
